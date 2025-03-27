@@ -16,13 +16,13 @@ const AuthButton = ({ setToken }) => {
   }, [setToken]);
 
   const handleLogin = () => {
-    window.location.href = 'http://localhost:5000/auth/google';
+    window.location.href = 'https://letter-editor-server-app.vercel.app/auth/google';
   };
 
   const handleLogout = () => {
     setUser(null);
     setToken(null);
-    window.location.href = 'http://localhost:5000/auth/logout';
+    window.location.href = 'https://letter-editor-server-app.vercel.app/auth/logout';
   };
 
   return (
