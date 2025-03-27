@@ -12,7 +12,7 @@ const TextEditor = ({ token }) => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/drive/save', {
+      const response = await axios.post('https://letter-editor-server-app.vercel.app/drive/save', {
         token,
         content,
         title
